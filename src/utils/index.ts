@@ -30,7 +30,7 @@ export const debounce = (func: () => void, delay?: number) => {
 }
 
 // 后面用泛型来规范类型
-export const useDebounce = (value: any, delay?: number) => {
+export const useDebounce = <O>(value: O, delay?: number): O => {
     const [debouncedValue, setDebouncedValue] = useState(value)
 
     useEffect(() => {

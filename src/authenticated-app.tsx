@@ -27,7 +27,6 @@ export const AuthenticatedApp = () => {
                         Hi, { user?.name }
                     </Button>
                 </Dropdown>
-                {/* <button onClick={ logout }>登出</button> */ }
             </HeaderRight>
         </PageHeader>
         <Main>
